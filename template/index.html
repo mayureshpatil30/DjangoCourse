@@ -3,8 +3,7 @@
 {% block content %}
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <form action="{% url 'lmsdashboard:search-results' %}" method="post" novalidate="novalidate">
-        Search for subjects:-
+        <form action="{% url 'teaching_urls:search-results' %}" method="post" novalidate="novalidate">
             {% csrf_token %}
             <div class="row">
                 <div class="col-sm-7">

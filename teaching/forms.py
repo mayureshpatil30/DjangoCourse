@@ -11,7 +11,8 @@ class InstituteRegistrationForm(forms.Form):
     email = forms.EmailField(max_length=25 , required = True)
     address= forms.CharField(max_length=127, required = True)  
     phone_number = forms.IntegerField()    
-    password = forms.CharField(widget=forms.PasswordInput)    
+    password = forms.CharField(widget=forms.PasswordInput) 
+    reg_type = forms.CharField(widget=forms.HiddenInput())   
 
 
 class TeacherRegistrationForm(forms.Form):

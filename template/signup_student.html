@@ -3,6 +3,7 @@
 
 <div class="jumbotron">
    <form action="" method="post">
+      <input type="hidden" value='T'>
       {% csrf_token %}
       {{form}}
       <input type="submit" value="Register">
