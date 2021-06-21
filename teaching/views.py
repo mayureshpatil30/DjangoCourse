@@ -5,7 +5,7 @@ from django.contrib.auth import *
 from .forms import *
 from django.db import transaction 
 from django.urls import *
-from django.http import HttpResponse
+from django.http import HttpResponse, request
 # Create your views here.
 from django.contrib import messages
 
@@ -114,7 +114,8 @@ class StudentRegistration(FormView):
         registeration(InstituteRegistrationForm, 'S')
         return super().form_valid(form)
 
-#ERROR IN course=course
+
+
 # --------------------------------------------login part----------------------------------------------
 
 
