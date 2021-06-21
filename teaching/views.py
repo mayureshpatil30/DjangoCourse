@@ -88,6 +88,7 @@ class InstituteRegisterView(FormView):
 
 
     
+    
 # ----------------------------------registration for Teacher------------------------------------------    
 # in template use hidden field reg_type
 #('T', 'S', 'I')
